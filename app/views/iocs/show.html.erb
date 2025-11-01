@@ -1,0 +1,21 @@
+<h1>IOC <%= @ioc.id %></h1>
+
+<dl>
+  <dt>IOC Type</dt>
+  <dd><%= @ioc.ioc_type %></dd>
+
+  <dt>Value</dt>
+  <dd><%= @ioc.value %></dd>
+
+  <dt>Source</dt>
+  <dd><%= @ioc.source %></dd>
+
+  <dt>First Seen</dt>
+  <dd><%= @ioc.first_seen.strftime("%Y-%m-%d %H:%M:%S") %></dd>
+
+  <dt>Last Seen</dt>
+  <dd><%= @ioc.last_seen.strftime("%Y-%m-%d %H:%M:%S") %></dd>
+</dl>
+
+
+<%= link_to "Back", iocs_path %>
