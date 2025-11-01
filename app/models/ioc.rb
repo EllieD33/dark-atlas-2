@@ -1,0 +1,2 @@
+class Ioc < ApplicationRecord
+end

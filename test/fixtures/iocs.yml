@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ioc_type: MyString
+  value: MyString
+  source: MyString
+  first_seen: 2025-11-01 16:53:23
+  last_seen: 2025-11-01 16:53:23
+  raw_data: 
+
+two:
+  ioc_type: MyString
+  value: MyString
+  source: MyString
+  first_seen: 2025-11-01 16:53:23
+  last_seen: 2025-11-01 16:53:23
+  raw_data: 
