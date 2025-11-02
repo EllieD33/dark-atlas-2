@@ -10,7 +10,7 @@ one:
 
 two:
   ioc_type: MyString
-  value: MyString
+  value: AnotherString
   source: MyString
   first_seen: 2025-11-01 16:53:23
   last_seen: 2025-11-01 16:53:23

@@ -17,6 +17,8 @@
   <dd><%= @ioc.last_seen.strftime("%Y-%m-%d %H:%M:%S") %></dd>
 </dl>
 
-<%= link_to "Edit", edit_ioc_path(@ioc) %>
+<% if authenticated? %>
+  <%= link_to "Edit", edit_ioc_path(@ioc) %>
+  <%= button_to "Delete", @ioc, method: :delete, data: { turbo_confirm: "Are you sure?" } %>
+<% end %>
 <%= link_to "Back", iocs_path %>
-<%= button_to "Delete", @ioc, method: :delete, data: { turbo_confirm: "Are you sure?" } %>
