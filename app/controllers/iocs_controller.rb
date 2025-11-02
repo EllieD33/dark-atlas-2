@@ -1,5 +1,5 @@
 class IocsController < ApplicationController
-  before_action :set_ioc, only: %i[ show edit update ]
+  before_action :set_ioc, only: %i[ show edit update destroy ]
   def index
     @iocs = Ioc.all
   end
@@ -28,6 +28,11 @@ class IocsController < ApplicationController
     else
       render :edit, status: :unprocessable_entity
     end
+  end
+
+  def destroy
+    @ioc.destroy
+    redirects_to iocs_path
   end
 
   private
