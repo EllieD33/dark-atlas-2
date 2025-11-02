@@ -8,3 +8,96 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem;
+}
+
+nav {
+  justify-content: flex-end;
+  display: flex;
+  font-size: 0.875em;
+  gap: 0.5rem;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+nav a {
+  display: inline-block;
+}
+
+main {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.alert,
+.error {
+  color: red;
+}
+
+.notice {
+  color: green;
+}
+
+.ioc-index table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-family: system-ui, sans-serif;
+  font-size: 0.95rem;
+}
+
+.ioc-index th,
+.ioc-index td {
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.ioc-index thead th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.ioc-index tbody tr:nth-child(even) {
+  background-color: #fdfdfd;
+}
+
+.ioc-index tbody tr:hover {
+  background-color: #f1f3f5;
+}
+
+.ioc-index td a:hover {
+  text-decoration: underline;
+}
+
+.ioc-index caption {
+  caption-side: top;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+dl.ioc {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.5rem 1rem;
+}
+
+dl.ioc dt {
+  font-weight: bold;
+}
+
+dl.ioc dd {
+  margin: 0;
+}
+
+
