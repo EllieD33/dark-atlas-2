@@ -17,5 +17,5 @@
   <dd><%= @ioc.last_seen.strftime("%Y-%m-%d %H:%M:%S") %></dd>
 </dl>
 
-
+<%= link_to "Edit", edit_ioc_path(@ioc) %>
 <%= link_to "Back", iocs_path %>

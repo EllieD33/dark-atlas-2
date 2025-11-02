@@ -1,10 +1,10 @@
 class IocsController < ApplicationController
+  before_action :set_ioc, only: %i[ show edit update ]
   def index
     @iocs = Ioc.all
   end
 
   def show
-    @ioc = Ioc.find(params[:id])
   end
 
   def new
@@ -17,6 +17,22 @@ class IocsController < ApplicationController
       redirect_to @ioc
     else render :new, status: :unprocessable_entity
     end
+  end
+
+  def edit
+  end
+
+  def update
+    if @ioc.update(ioc_params)
+      redirect_to @ioc
+    else
+      render :edit, status: :unprocessable_entity
+    end
+  end
+
+  private
+  def set_ioc
+    @ioc = Ioc.find(params[:id])
   end
 
   private
