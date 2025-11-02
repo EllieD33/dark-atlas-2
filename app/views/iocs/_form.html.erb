@@ -1,0 +1,24 @@
+<%= form_with model: ioc do |form| %>
+  <% if form.object.errors.any? %>
+    <p class="error"><%= form.object.errors.full_messages.first %></p>
+  <% end %>
+
+  <div>
+    <%= form.label :type %>
+    <%= form.select :ioc_type, [['IP Address', 'ip_address'], ['Domain', 'domain'], ['Hash', 'hash']], prompt: "Select type" %>
+  </div>
+
+  <div>
+    <%= form.label :value %>
+    <%= form.text_field :value %>
+  </div>
+
+  <div>
+        <%= form.label :"First Seen" %>
+        <%= form.datetime_local_field :first_seen %>
+  </div>
+
+  <div>
+    <%= form.submit :"Create IOC" %>
+  </div>
+<% end %>
