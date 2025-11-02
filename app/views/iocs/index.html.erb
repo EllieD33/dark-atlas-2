@@ -17,6 +17,7 @@
     </thead>
     <tbody>
       <% @iocs.each do |ioc| %>
+      <% cache ioc do %>
         <tr>
           <td><%= ioc.id %></td>
           <td><%= ioc.ioc_type %></td>
@@ -25,6 +26,7 @@
           <td><%= ioc.last_seen.strftime("%Y-%m-%d %H:%M:%S") %></td>
           <td><%= link_to "View details", ioc_path(ioc) %></td>
         </tr>
+        <% end %>
       <% end %>
     </tbody>
   </table>
