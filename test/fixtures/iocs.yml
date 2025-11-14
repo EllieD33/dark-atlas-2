@@ -1,17 +1,17 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  ioc_type: MyString
-  value: MyString
+  ioc_type: IP Address
+  value: 183.768.32.41
   source: MyString
-  first_seen: 2025-11-01 16:53:23
-  last_seen: 2025-11-01 16:53:23
-  raw_data: 
+  first_seen: 2025-11-01 17:53:23
+  last_seen: 2025-11-01 16:53:00
+  raw_data: {"ip_address": }
 
 two:
-  ioc_type: MyString
+  ioc_type: Hash
   value: AnotherString
   source: MyString
-  first_seen: 2025-11-01 16:53:23
-  last_seen: 2025-11-01 16:53:23
+  first_seen: 2025-11-01 15:53:23
+  last_seen: 2025-11-01 16:43:13
   raw_data: 
